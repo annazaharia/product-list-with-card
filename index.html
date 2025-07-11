@@ -1,66 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Product list with cart</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Product list with cart</title>
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <h1>Desserts</h1>
+        <div class="product-list">
+          <div class="product-card">
+            <img
+              src="images/image-waffle-mobile.jpg"
+              srcset="
+                images/image-waffle-mobile.jpg  654w,
+                images/image-waffle-tablet.jpg  427w,
+                images/image-waffle-desktop.jpg 502w
+              "
+              sizes="(max-width: 576px) 100vw, (min-width: 577px) and (max-width: 992px) 212px, 250px"
+              alt="Waffle with Berries"
+            />
+            <p class="category">Waffle</p>
+            <h3 class="product-name">Waffle with Berries</h3>
+            <span class="price">$6.50</span><br />
+            <button class="btn-add-product"><span class="icon"></span>Add to Cart</button>
+          </div>
 
-</head>
-<body>
+          <div class="product-card">
+            <img
+              src="images/image-creme-brulee-mobile.jpg"
+              srcset="
+                images/image-creme-brulee-mobile.jpg  654w,
+                images/image-creme-brulee-tablet.jpg  427w,
+                images/image-creme-brulee-desktop.jpg 502w
+              "
+              sizes="(max-width: 576px) 100vw, (min-width: 577px) and (max-width: 992px) 212px, 250px"
+              alt="Vanilla Bean Crème Brûlée"
+            />
+            <p class="category">Crème Brûlée</p>
+            <h3 class="product-name">Vanilla Bean Crème Brûlée</h3>
+            <span class="price">$7.00 </span> <br />
+            <button class="btn-add-product"><span class="icon"></span>Add to Cart</button>
+          </div>
 
-  Desserts
+          <div class="product-card">
+            <img
+              src="images/image-macaron-mobile.jpg"
+              srcset="
+                images/image-macaron-mobile.jpg  654w,
+                images/image-macaron-tablet.jpg  427w,
+                images/image-macaron-desktop.jpg 502w
+              "
+              sizes="(max-width: 576px) 100vw, (min-width: 577px) and (max-width: 992px) 212px, 250px"
+              alt="Macaron Mix of Five"
+            />
+            <p class="category">Macaron</p>
+            <h3 class="product-name">Macaron Mix of Five</h3>
+            <span class="price">$8.00</span><br />
+            <button class="btn-add-product"><span class="icon"></span>Add to Cart</button>
+          </div>
 
-  Waffle with Berries
-  Waffle
-  6.50
-  Add to Cart
+          <div class="product-card">
+            <img
+              src="images/image-tiramisu-mobile.jpg"
+              srcset="
+                images/image-tiramisu-mobile.jpg  654w,
+                images/image-tiramisu-tablet.jpg  427w,
+                images/image-tiramisu-desktop.jpg 502w
+              "
+              sizes="(max-width: 576px) 100vw, (min-width: 577px) and (max-width: 992px) 212px, 250px"
+              alt="Classic Tiramisu"
+            />
+            <p class="category">Tiramisu</p>
+            <h3 class="product-name">Classic Tiramisu</h3>
+            <span class="price">$5.50</span><br />
+            <button class="btn-add-product"><span class="icon"></span>Add to Cart</button>
+          </div>
 
-  Vanilla Bean Crème Brûlée
-  Crème Brûlée
-  7.00
-  Add to Cart
+          <div class="product-card">
+            <img
+              src="images/image-baklava-mobile.jpg"
+              srcset="
+                images/image-baklava-mobile.jpg  654w,
+                images/image-baklava-tablet.jpg  427w,
+                images/image-baklava-desktop.jpg 502w
+              "
+              sizes="(max-width: 576px) 100vw, (min-width: 577px) and (max-width: 992px) 212px, 250px"
+              alt="Pistachio Baklava"
+            />
+            <p class="category">Baklava</p>
+            <h3 class="product-name">Pistachio Baklava</h3>
+            <span class="price"> $4.00 </span> <br />
+            <button class="btn-add-product"><span class="icon"></span>Add to Cart</button>
+          </div>
 
-  Macaron Mix of Five
-  Macaron
-  8.00
-  Add to Cart
+          <div class="product-card">
+            <img
+              src="images/image-meringue-mobile.jpg"
+              srcset="
+                images/image-meringue-mobile.jpg  654w,
+                images/image-meringue-tablet.jpg  427w,
+                images/image-meringue-desktop.jpg 502w
+              "
+              sizes="(max-width: 576px) 100vw, (min-width: 577px) and (max-width: 992px) 212px, 250px"
+              alt="Lemon Meringue Pie"
+            />
+            <p class="category">Pie</p>
+            <h3 class="product-name">Lemon Meringue Pie</h3>
+            <span class="price">$5.00</span> <br />
+            <button class="btn-add-product"><span class="icon"></span>Add to Cart</button>
+          </div>
 
-  Classic Tiramisu
-  Tiramisu
-  5.50
-  Add to Cart
+          <div class="product-card">
+            <img
+              src="images/image-cake-mobile.jpg"
+              srcset="
+                images/image-cake-mobile.jpg  654w,
+                images/image-cake-tablet.jpg  427w,
+                images/image-cake-desktop.jpg 502w
+              "
+              sizes="(max-width: 576px) 100vw, (min-width: 577px) and (max-width: 992px) 212px, 250px"
+              alt="Red Velvet Cake"
+            />
+            <p class="category">Cake</p>
+            <h3 class="product-name">Red Velvet Cake</h3>
+            <span class="price">$4.50</span> <br />
+            <button class="btn-add-product"><span class="icon"></span>Add to Cart</button>
+          </div>
 
-  Pistachio Baklava
-  Baklava
-  4.00
-  Add to Cart
+          <div class="product-card">
+            <img
+              src="images/image-brownie-mobile.jpg"
+              srcset="
+                images/image-brownie-mobile.jpg  654w,
+                images/image-brownie-tablet.jpg  427w,
+                images/image-brownie-desktop.jpg 502w
+              "
+              sizes="(max-width: 576px) 100vw, (min-width: 577px) and (max-width: 992px) 212px, 250px"
+              alt="Salted Caramel Brownie"
+            />
+            <p class="category">Brownie</p>
+            <h3 class="product-name">Salted Caramel Brownie</h3>
+            <span class="price">$4.50 </span> <br />
+            <button class="btn-add-product"><span class="icon"></span>Add to Cart</button>
+          </div>
 
-  Lemon Meringue Pie
-  Pie
-  5.00
-  Add to Cart
-
-  Red Velvet Cake
-  Cake
-  4.50
-  Add to Cart
-
-  Salted Caramel Brownie
-  Brownie
-  4.50
-  Add to Cart
-
-  Vanilla Panna Cotta
-  Panna Cotta
-  6.50
-  Add to Cart
-
-  Your Cart (<!-- Quantity -->)
-  Your added items will appear here
-
- 
-</body>
+          <div class="product-card">
+            <img
+              src="images/image-panna-cotta-mobile.jpg"
+              srcset="
+                images/image-panna-cotta-mobile.jpg  654w,
+                images/image-panna-cotta-tablet.jpg  427w,
+                images/image-panna-cotta-desktop.jpg 502w
+              "
+              sizes="(max-width: 576px) 100vw, (min-width: 577px) and (max-width: 992px) 212px, 250px"
+              alt="Vanilla Panna Cotta"
+            />
+            <p class="category">Panna Cotta</p>
+            <h3 class="product-name">Vanilla Panna Cotta</h3>
+            <span class="price">$6.50 </span> <br />
+            <button class="btn-add-product"><span class="icon"></span>Add to Cart</button>
+          </div>
+        </div>
+      </main>
+      <aside class="order-card">
+        <h2>Your Cart ()</h2>
+        <img src="images/illustration-empty-cart.svg" />
+        <p>Your added items will appear here</p>
+      </aside>
+    </div>
+  </body>
 </html>
